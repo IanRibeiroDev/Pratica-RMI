@@ -32,6 +32,17 @@ public class AppClienteBanco {
                     //chamada ao método remoto, como se fosse executar localmente
                     System.out.println(banco.quantidadeContas());
                 }
+                case 3: {
+
+                    entrada = new Scanner(System.in);
+
+                }
+                case 4: {
+
+                }
+                case 5: {
+
+                }
             }
             menu();
             opcao = entrada.nextInt();
@@ -42,7 +53,11 @@ public class AppClienteBanco {
         System.out.println("\n=== BANCO RMI (ou FMI?!) ===");
         System.out.println("1 - Saldo da conta");
         System.out.println("2 - Quantidade de contas");
+        System.out.println("3 - Cadastrar contas");
+        System.out.println("4 - Pesquisar contas");
+        System.out.println("5 - Deletar contas");
         System.out.println("9 - Sair");
+        System.out.println("Ian Ribeiro de Mendonça");
     }
 
 }

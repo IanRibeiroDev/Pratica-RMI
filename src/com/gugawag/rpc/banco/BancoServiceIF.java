@@ -5,6 +5,9 @@ import java.rmi.RemoteException;
 
 public interface BancoServiceIF extends Remote {
 
-    double saldo(String conta) throws RemoteException;
+    Double saldo(String conta) throws RemoteException;
     int quantidadeContas() throws RemoteException;
+    void adicionarConta(String conta) throws RemoteException;
+    Conta pesquisarConta(String conta) throws RemoteException;
+    void removerConta(String conta) throws RemoteException;
 }
